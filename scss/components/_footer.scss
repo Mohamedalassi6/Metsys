@@ -1,0 +1,64 @@
+// start footer
+
+.footer {
+  padding: 100px 0;
+  p {
+    margin: 28px 0;
+  }
+  h6 {
+    color: $three-color;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: #464646;
+        font-size: 15px;
+        font-weight: 400;
+        transition: 0.3s;
+        &:hover {
+          color: $one-Color;
+        }
+      }
+    }
+  }
+  .email {
+    input {
+      padding: 18px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #efefef;
+      outline-color: $one-Color;
+      &::placeholder {
+        color: #989898;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+    a {
+      position: absolute;
+      right: 48px;
+      top: 18px;
+      svg {
+        color: $one-Color;
+      }
+    }
+  }
+}
+
+// end footer
+
+// start copyright
+
+.copyright {
+  padding: 32px 0;
+  color: #848282;
+  font-size: 15px;
+  font-weight: 400;
+  border-top: 2px solid #f0f0f0;
+}
+
+// end copyright

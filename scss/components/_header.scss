@@ -1,0 +1,141 @@
+// start navber
+
+.navbar {
+  padding: 24px 0;
+  &.navbar-home {
+    background: $one-Color;
+    .start-btn {
+      background: $four-color;
+      color: #fff;
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  &.navbar-about {
+    background: #fff;
+    .navbar-toggler {
+      svg {
+        color: $one-Color;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $four-color;
+          &:hover {
+            color: $one-Color;
+            &.active {
+              &::before {
+                background: $one-Color;
+              }
+            }
+          }
+          &.active {
+            &::before {
+              content: "";
+              width: 73px;
+              background: $four-color;
+            }
+          }
+        }
+      }
+    }
+    .sign-in {
+      color: $five-color;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 12px 24px;
+      margin: 0 35px;
+      position: relative;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      &::after {
+        content: "";
+        width: 0;
+        height: 100%;
+        background: $one-Color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      &:hover {
+        color: #fff;
+        &::after {
+          width: 100%;
+        }
+      }
+      &::before {
+        content: "";
+        width: 1px;
+        height: 26px;
+        background: $five-color;
+        position: absolute;
+        left: -50px;
+      }
+      @media (max-width: 991px) {
+        margin: 0;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .sign-up {
+      padding: 12px 24px;
+      border-radius: 5px;
+      background: $two-Colors;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        color: $four-color;
+      }
+    }
+  }
+  .navbar-toggler {
+    svg {
+      color: #fff;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      padding-right: 60px;
+      &:last-child {
+        padding-right: 50px;
+      }
+      .nav-link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.3s;
+        &:hover {
+          color: $four-color;
+          &.active {
+            &::before {
+              background: $four-color;
+            }
+          }
+        }
+        &.active {
+          position: relative;
+          &::before {
+            content: "";
+            width: 49px;
+            height: 2px;
+            border-radius: 50px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+// end navber
