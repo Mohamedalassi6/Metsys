@@ -2,7 +2,7 @@
 
 .header {
   background: $one-Color;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 80px;
   .img2,
   .img3,
@@ -51,6 +51,9 @@
       padding: 32px 0;
       @media (max-width: 767px) {
         font-size: 40px;
+      }
+      @media (max-width: 567px) {
+        font-size: 30px;
       }
     }
     p {

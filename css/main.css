@@ -1,6 +1,6 @@
 .header {
   background: #ff4b36;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 80px;
 }
 .header .img2,
@@ -60,6 +60,11 @@
 @media (max-width: 767px) {
   .header .text h2 {
     font-size: 40px;
+  }
+}
+@media (max-width: 567px) {
+  .header .text h2 {
+    font-size: 30px;
   }
 }
 .header .text p {
@@ -560,6 +565,11 @@
   font-size: 58px;
   font-weight: 700;
   margin: 0;
+}
+@media (max-width: 567px) {
+  .about-bar h2 {
+    font-size: 40px;
+  }
 }
 .about-bar p {
   color: #fff;
